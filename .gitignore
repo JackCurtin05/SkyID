@@ -1,0 +1,40 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Training data & large files
+backend/data/
+backend/combined.zip
+*.zip
+
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Model weights (host on Hugging Face Hub or Git LFS instead)
+backend/models/*.pth
+
+# Windows installer
+*.msi
+
+# Build outputs
+frontend/dist/
+frontend/build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE / OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

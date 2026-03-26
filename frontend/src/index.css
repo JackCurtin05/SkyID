@@ -1,0 +1,44 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:           #07090f;
+  --bg-card:      #0d1526;
+  --bg-card-2:    #0f1c30;
+  --border:       #1a3352;
+  --accent:       #3b82f6;
+  --accent-light: #60a5fa;
+  --accent-glow:  rgba(59, 130, 246, 0.18);
+  --text:         #94a3b8;
+  --text-bright:  #e2e8f0;
+  --text-dim:     #3d5166;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: var(--text-bright);
+  margin: 0;
+  line-height: 1.2;
+}
+
+p { margin: 0; }
+
+button { font-family: inherit; cursor: pointer; }
