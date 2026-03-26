@@ -14,7 +14,6 @@ Upload a photo, paste from clipboard, or drop in an image URL — SkyID will ide
 
 - 🔍 **Instant identification** — upload, drag & drop, paste, or provide a URL
 - 📊 **Top 5 predictions** with confidence scores
-- ✈ **3D aircraft viewer** powered by Three.js
 - 📋 **Specs panel** with aircraft details
 - 🗂 **Collection system** — discover and track 200+ aircraft variants
 - 🟢 **Live API status** indicator
@@ -24,10 +23,16 @@ Upload a photo, paste from clipboard, or drop in an image URL — SkyID will ide
 
 ---
 
-## Demo
+## Screenshots
 
-![Demo GIF](assets/demo.gif)
-<!-- 🎥 Replace with a screen recording GIF showing the app in action (upload a photo and get a result) -->
+![Upload Screen](assets/screenshot-upload.png)
+<!-- 📸 Replace with a screenshot of the upload/dropzone screen before any image is submitted -->
+
+![Prediction Results](assets/screenshot-results.png)
+<!-- 📸 Replace with a screenshot showing a prediction result with the confidence bars -->
+
+![Collection Panel](assets/screenshot-collection.png)
+<!-- 📸 Replace with a screenshot of the collection panel showing discovered aircraft -->
 
 ---
 
@@ -88,7 +93,7 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## How It Works
 
-SkyID uses a fine-tuned deep learning model (EfficientNet/ResNet backbone) trained on aircraft variant data. The backend runs as a FastAPI server that accepts image uploads or URLs, runs inference, and returns the top 5 predictions with confidence scores. The React frontend handles the UI, 3D viewer, and collection tracking.
+SkyID uses a fine-tuned deep learning model (EfficientNet/ResNet backbone) trained on aircraft variant data. The backend runs as a FastAPI server that accepts image uploads or URLs, runs inference, and returns the top 5 predictions with confidence scores. The React frontend handles the UI, specs panel, and collection tracking.
 
 ![Model Architecture Diagram](assets/diagram.png)
 <!-- 📸 Optional: replace with a diagram showing the pipeline (image → model → predictions) -->
@@ -101,7 +106,7 @@ SkyID uses a fine-tuned deep learning model (EfficientNet/ResNet backbone) train
 |---|---|
 | Frontend | React, Vite, Three.js |
 | Backend | FastAPI, PyTorch, Pillow |
-| Model | Custom trained on FGVC-Aircraft |
+| Model | Custom trained on FGVC-Aircraft + Military Aircraft dataset |
 
 ---
 
@@ -109,7 +114,12 @@ SkyID uses a fine-tuned deep learning model (EfficientNet/ResNet backbone) train
 
 A Colab training notebook is included: [`SkyID_Train_Colab.ipynb`](SkyID_Train_Colab.ipynb)
 
-Training data is not included in this repo due to size. Download the [FGVC-Aircraft dataset](https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/) and place it in `backend/data/`.
+Training data is not included in this repo due to size. SkyID was trained on two datasets combined:
+
+- [FGVC-Aircraft](https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/) — civilian aircraft variants, place in `backend/data/fgvc-aircraft-2013b/`
+- Military Aircraft crop dataset — place in `backend/data/military/crop/`
+
+Run `prepare_dataset.py` to merge them into the combined training set before training.
 
 ---
 
