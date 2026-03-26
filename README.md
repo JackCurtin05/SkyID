@@ -19,8 +19,8 @@ Upload a photo, paste from clipboard, or drop in an image URL — SkyID will ide
 - 🗂 **Collection system** — discover and track 200+ aircraft variants
 - 🟢 **Live API status** indicator
 
-![Prediction Results](assets/screenshot-results.png)
-<!-- 📸 Replace with a screenshot showing a prediction result with the confidence bars -->
+<img width="1745" height="1717" alt="image" src="https://github.com/user-attachments/assets/ce58f1bf-cedc-4464-b0b7-f73f9fa0d1c7" />
+
 
 ---
 
