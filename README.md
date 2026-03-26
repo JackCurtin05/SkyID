@@ -94,7 +94,6 @@ Then open [http://localhost:5173](http://localhost:5173) in your browser.
 
 SkyID uses a fine-tuned deep learning model (EfficientNet/ResNet backbone) trained on aircraft variant data. The backend runs as a FastAPI server that accepts image uploads or URLs, runs inference, and returns the top 5 predictions with confidence scores. The React frontend handles the UI, specs panel, and collection tracking.
 
-![Model Architecture Diagram](assets/diagram.png)
 <!-- 📸 Optional: replace with a diagram showing the pipeline (image → model → predictions) -->
 
 ---
