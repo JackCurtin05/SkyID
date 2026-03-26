@@ -18,20 +18,19 @@ Upload a photo, paste from clipboard, or drop in an image URL — SkyID will ide
 - 🗂 **Collection system** — discover and track 200+ aircraft variants
 - 🟢 **Live API status** indicator
 
-<img width="1745" height="1717" alt="image" src="https://github.com/user-attachments/assets/ce58f1bf-cedc-4464-b0b7-f73f9fa0d1c7" />
 
 
 ---
 
 ## Screenshots
 
-![Upload Screen](assets/screenshot-upload.png)
+<img width="1627" height="1901" alt="image" src="https://github.com/user-attachments/assets/526dd44a-5e9b-4564-8d7b-6da7bba53bfd" />
 <!-- 📸 Replace with a screenshot of the upload/dropzone screen before any image is submitted -->
 
-![Prediction Results](assets/screenshot-results.png)
+<img width="1395" height="1589" alt="image" src="https://github.com/user-attachments/assets/3c67e08d-187c-4fb2-a17a-14b07c374e8c" />
 <!-- 📸 Replace with a screenshot showing a prediction result with the confidence bars -->
 
-![Collection Panel](assets/screenshot-collection.png)
+<img width="1449" height="1775" alt="image" src="https://github.com/user-attachments/assets/3e9b2e0a-a524-4e87-ab0f-c4324cf90551" />
 <!-- 📸 Replace with a screenshot of the collection panel showing discovered aircraft -->
 
 ---
