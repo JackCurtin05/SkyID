@@ -4,7 +4,8 @@
 
 Upload a photo, paste from clipboard, or drop in an image URL — SkyID will identify the aircraft and show you the top 5 predictions with confidence scores.
 
-![App Screenshot](assets/screenshot-main.png)
+<img width="2363" height="1616" alt="image" src="https://github.com/user-attachments/assets/4b3129b1-6899-48c4-85ad-b2c1479328fb" />
+
 <!-- 📸 Replace with a screenshot of the full app interface -->
 
 ---
